@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>Mad Libs</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+  </head>
+  <body>
+    <h1>Fill in the dimensions and weight of your package</h1>
+    <form action='/result'>
+      <div class='form-group'>
+        <label for='weight'>Weight</label>
+        <input id='weight' name='weight' class='form-control' type='number' min="-1">
+      </div>
+      <div class='form-group'>
+        <label for='height'>Height</label>
+        <input id='height' name='height' class='form-control' type='number' min="1">
+      </div>
+      <div class='form-group'>
+        <label for='width'>Width</label>
+        <input id='width' name='width' class='form-control' type='number' min="1">
+      </div>
+      <div class='form-group'>
+        <label for='depth'>An depth</label>
+        <input id='depth' name='depth' class='form-control' type='number' min="1">
+      </div>
+
+      <button type='submit' class='btn'>Calculate cost!</button>
+    </form>
+  </body>
+</html>
